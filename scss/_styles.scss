@@ -1,0 +1,383 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+ }
+
+  /* GENERAL */
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.max-width {
+	max-width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.hidden {
+	display: none;
+}
+
+.caps {
+	text-transform: uppercase;
+}
+
+/* HOME & ABOUT ME SECTIONS */
+
+#body-background {
+	position: relative;
+	background: url("../pics/aboutme-topmargin.jpg");
+	background-position: 50% top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#body-background.blank {
+	background-image:none;
+}
+
+#aboutme-text {
+	position: relative;
+	height: 48vh;
+	p {
+		position: absolute;
+		display: inline-block;
+		width: 25%;
+		bottom: 8%;
+		color: white;
+	}
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: white;
+	height: 48vh;
+	z-index: 10;
+	-webkit-transition-duration: 0.6s;
+	-moz-transition-duration: 0.6s;
+	-o-transition-duration: 0.6s;
+	transition-duration: 0.6s;
+}
+
+header.small {
+	height: 20vh;
+	min-height: 165px;
+	-webkit-transition-duration: 0.6s;
+	-moz-transition-duration: 0.6s;
+	-o-transition-duration: 0.6s;
+	transition-duration: 0.6s;
+}
+
+#center-menu-container {
+	position: relative;
+	height: inherit;
+}
+
+#menu-container {
+	position: absolute;
+	display: inline-block;
+	width: 100%;
+	bottom: 0;
+}
+
+#main-menu {
+	overflow: hidden;
+	position: relative;
+}
+
+#main-menu img {
+	max-width: 100%;
+}
+
+#portfolio-sections span {
+	color: #ECECEC;
+	font-weight: 600;
+	padding-right: .5em;
+	line-height: 2.5em;
+}
+
+#dixi-portfolio {
+	position: relative;
+	display: inline-block;
+	float: left;
+	width: 310px;
+	margin-bottom: 20px;
+}
+
+#menu-portfolio {
+	position: absolute;
+	width: 215px;
+	left: 45%;
+	top: 85%;
+}
+
+#menu-about {
+	position: absolute;
+	width: 106px;
+	right: 0;
+	bottom: 0;
+}
+
+#contact-info {
+	position: fixed;
+	bottom: 60px;
+	a {
+		position: absolute;
+		display: inline-block;
+		vertical-align: middle;
+		overflow: hidden;
+	}
+	#behance-link {
+		margin-left: 45px;
+	}
+	#email-link {
+		margin-left: 90px;
+		width: 220px;
+		img {
+			position: absolute;
+			visibility: hidden;
+			left: 0;
+		}
+	}
+	span {
+		color: white;
+		line-height: 30px;
+	}
+	img {
+		vertical-align: middle;
+	}
+}
+
+/* PORTFOLIO SECTION */
+
+.covers-container {
+	position: absolute;
+	width: 100%;
+	height: 150%;
+	top: 43%;
+	white-space: nowrap;
+}
+
+.covers-container::-webkit-scrollbar { 
+	    display: none; 
+	}
+
+#covers {
+	width: auto;
+	height: 100%;
+	img {
+		display: inline-block;
+		height: 111%;
+		margin-right: -5px;
+		vertical-align: bottom;
+	}
+	a {
+		display: inline-block;
+		height: inherit;
+	}
+}
+
+#previous, #next {
+	position: fixed;
+	top: 60%;
+}
+
+#previous {
+	left: 2em;
+}
+
+#next {
+	right: 2em;
+}
+
+#covers a.web:hover {
+	#portfolio-sections.web {
+	color: black;
+	}
+}
+
+/* PROJECT PAGES */
+
+article {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 40%;
+	.article-wrapper {
+		position: relative;
+		height: 100%;
+		margin-top: 3%;
+		.text-wrapper {
+			position: fixed;
+			width: 18%;
+		}
+		h3, h6 {
+			display: inline-block;
+			font-weight: 600;
+			line-height: 1.4em;
+			margin: 1em 0;
+		}
+		p {
+			display: inline-block;
+			margin: 0;
+		}
+		#pic-gallery.vertical {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 70%;
+			height: auto;
+			img {
+				max-width: 100%;
+				margin-bottom: 1em;
+			}
+		}
+		#pic-gallery.horizontal {
+			margin-left: 30%;
+			width: 100%;
+			overflow: scroll;
+			white-space: nowrap;
+			img {
+				width: 1600px;
+			}
+		}
+	}
+}
+
+/* RESPONSIVE HEADER */
+
+@media only screen and (max-height: 832px) and (max-width: 840px) {
+	header {
+		height: 400px;
+	}
+}
+
+@media only screen and (max-height: 832px) and (min-width: 840px) and (max-width: 1400px) {
+	header {
+		height: 345px;
+	}
+}
+
+@media (max-height: 820px) {
+  .small {
+  	header {
+  		height: 140px;
+  	}
+  	#menu-container {
+  		margin-top: 35px;
+  		bottom: initial;
+  	}
+  }
+}
+
+@media (max-height: 590px) {
+  	header {
+  		min-height: 280px;
+  	}
+  	#menu-container {
+  		position: relative;
+  		margin-top: 140px;
+  	}
+}
+
+@media (max-width: 720px) {
+	#menu-dixi {
+		width: 248px;
+	}
+	#menu-portfolio {
+		width: 172px;
+		left: 36%;
+	}
+	#menu-about {
+		width: 85px;
+	}
+	#portfolio-sections {
+		font-size: .7em;
+	}
+}
+
+/* RESPONSIVE ABOUT ME <p> AND SOCIAL MEDIA ICONS */
+
+
+@media (max-width: 1480px) {
+	#contact-info {
+		#email-link {
+			span {
+				font-size: .8em
+			}
+		}
+	}
+}
+
+@media (max-width: 1240px) {
+  #aboutme-text p {
+    width: 35%;
+  }
+}
+
+@media (max-width: 1180px) {
+	#contact-info {
+		#email-link {
+			img {
+				visibility: visible;
+			}
+			span {
+				visibility: hidden;
+			}
+		}
+	}
+}
+
+@media (max-width: 960px) {
+  body {
+    font-size: .8em;
+  }
+}
+
+@media (max-width: 820px) {
+	#aboutme-text p {
+		width: 50%;
+	}
+}
+
+/*
+@media (max-width: 570px) {
+	#center-menu-container {
+		width: 399px;
+		margin-left: 85px;
+	}
+} and remove max-width class
+*/
+
+@media (max-width: 460px) {
+  #aboutme-text p {
+  	width: 70%;
+  }
+}
+
+@media only screen and (max-height: 790px) {
+  #aboutme-text p {
+    top: 180px;
+    bottom: initial;
+    width: 40%;
+  }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<head>
+	<title>DIXI :: Ioli Xanthaki Design</title>
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body id="body-background">
+
+	<!-- ABOUT ME <p> -->
+		<div id="aboutme-text" class="max-width">
+			<p>
+				I was born in Athens, Greece, then moved in Italy and now the UK.
+				I've worked in illustration, branding & logo design, packaging design, retail design.
+				I am now about to become a Web Developer.
+			</p>
+		</div>
+
+		<!-- WHITE HEADER WITH MAIN MENU -->
+		<header>
+			<div id="center-menu-container" class="max-width">
+				<div id="menu-container">
+					<div id="main-menu">
+						<div id="dixi-portfolio">
+							<div id="menu-dixi">
+								<a href="#">
+								<img src="pics/menu/dixi.png" alt="home button"/>
+								</a>
+							</div>
+							<div id="menu-portfolio">
+								<a href="#">
+								<img src="pics/menu/portfolio.png" alt="portfolio button"/>
+								</a>
+							</div>
+						</div>
+						<div id="menu-about">
+							<a href="#">
+							<img src="pics/menu/about.png" alt="about button"/>
+							</a>
+						</div>
+					</div>
+					<nav id="portfolio-sections" class="invisible">
+						<a href="#" onclick="updateContent('retail')" class="portfolio-section retail">
+							<span class="caps">retail</span>
+						</a>
+						<a href="#" onclick="updateContent('web')" class="portfolio-section web">
+							<span class="caps">web</span>
+						</a>
+						<a href="#" onclick="updateContent('branding')" class="portfolio-section branding">
+							<span class="caps">branding</span>
+						</a>
+						<a href="#" onclick="updateContent('infographics')" class="portfolio-section infographics">
+							<span class="caps">infographics</span>
+						</a>
+						<a href="#" onclick="updateContent('packaging')" class="portfolio-section packaging">
+							<span class="caps">packaging</span>
+						</a>
+						<a href="#" onclick="updateContent('interior')" class="portfolio-section interior">
+							<span class="caps">interior</span>
+						</a>
+						<a href="#" onclick="updateContent('various')" class="portfolio-section various">
+							<span class="caps">various</span>
+						</a>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+	<!-- SECTIONS CAROUSEL -->
+	<section class="covers-container invisible">
+		<a href="#"><img id="previous" src="pics/menu/arrow-left.png"/>
+		</a>
+		<a href="#"><img id="next" src="pics/menu/arrow-right.png"/>
+		</a>
+		<div id="covers">
+			<a href="#" onclick="updateContent('retail')" class="portfolio-section retail">
+				<img id="retail" src="pics/work-covers/retail.jpg"/>
+			</a>
+			<a href="#" onclick="updateContent('web')" class="portfolio-section web">
+				<img id="web" src="pics/work-covers/web.jpg"/>
+			</a>
+			<a href="#" onclick="updateContent('branding')" class="portfolio-section branding">
+				<img id="branding" src="pics/work-covers/branding.jpg"/>
+			</a>
+			<a href="#" onclick="updateContent('infographics')" class="portfolio-section infographics">
+				<img id="infographics" src="pics/work-covers/infographics.jpg"/>
+			</a>
+			<a href="#" onclick="updateContent('packaging')" class="portfolio-section packaging">
+				<img id="packaging" src="pics/work-covers/packaging.jpg"/>
+			</a>
+			<a href="#" onclick="updateContent('interior')" class="portfolio-section interior">
+				<img id="interior" src="pics/work-covers/interior.jpg"/>
+			</a>
+			<a href="#" onclick="updateContent('various')" class="portfolio-section various">
+				<img id="various" src="pics/work-covers/various.jpg"/>
+			</a>
+		</div>
+	</section>
+
+	<!-- PROJECTS PAGE -->
+	<article class="hidden">
+		<div class="article-wrapper max-width">
+			<div class="text-wrapper">
+				<h3  id="project-title"class="caps"></h3><br/>
+				<p id="project-intro"></p><br/>
+				<h6 id="project-credits"></h6>
+			</div>
+			<div id="pic-gallery" class="vertical"></div>
+		</div>
+	</article>
+
+	<!-- SOCIAL MEDIA -->
+	<div class="max-width">
+		<div id="contact-info">
+		<a href="https://www.linkedin.com/pub/ioli-xanthaki/16/9a/494" target="_blank">
+			<img id="linkedin" src="pics/menu/linkedin.png"/>
+		</a>
+		<a id="behance-link" href="https://www.behance.net/ioli_x" target="_blank">
+			<img id="behance" src="pics/menu/behance.png"/>
+		</a>
+		<a id="email-link" href="mailto:ioli.xanthaki@gmail.com">
+			<span class="caps">ioli.xanthaki@gmail.com</span>
+			<img src="pics/menu/email.png"/>
+		</a>
+		</div>
+	</div>
+
+  <script src='http://code.jquery.com/jquery-latest.min.js'></script>
+  <script src="js/main.js"></script>
+  <script src="js/projects.js"></script>
+  
+
+</body>
+
+</html>
