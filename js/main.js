@@ -36,7 +36,8 @@ $("#menu-about").click(function() {
 	$("article").addClass('hidden');
 	$("#linkedin").attr('src', 'pics/menu/linkedin.png');
 	$("#behance").attr('src', 'pics/menu/behance.png');
-	$("#email").css('color', 'white');
+	$("#email-link img").attr('src', 'pics/menu/email.png');
+	$("#email-link span").css('color', 'white');
 });
 
 $("#menu-dixi").click(function() {
@@ -48,7 +49,8 @@ $("#menu-dixi").click(function() {
 	$("article").addClass('hidden');
 	$("#linkedin").attr('src', 'pics/menu/linkedin.png');
 	$("#behance").attr('src', 'pics/menu/behance.png');
-	$("#email").css('color', 'white');
+	$("#email-link img").attr('src', 'pics/menu/email.png');
+	$("#email-link span").css('color', 'white');
 });
 
 $("#menu-portfolio").click(function() {
@@ -60,7 +62,8 @@ $("#menu-portfolio").click(function() {
 	$("article").addClass('hidden');
 	$("#linkedin").attr('src', 'pics/menu/linkedin.png');
 	$("#behance").attr('src', 'pics/menu/behance.png');
-	$("#email").css('color', 'white');
+	$("#email-link img").attr('src', 'pics/menu/email.png');
+	$("#email-link span").css('color', 'white');
 });
 
 // PORTFOLIO SECTIONS ARROWS
