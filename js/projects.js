@@ -6,6 +6,7 @@ var retail = {
 			'pics/works/Retail-SGHneverhide.jpg',
 			'pics/works/Retail-SGHpersol.jpg',
 			'pics/works/Retail-SGHrbliteforce.jpg',
+			'pics/works/Retail-SGHrbvintage.jpg',
 			'pics/works/Retail-SGHtiffany.jpg',
 			'pics/works/Retail-SGHvday.jpg',
 			'pics/works/Retail-SGHxmas.jpg',
