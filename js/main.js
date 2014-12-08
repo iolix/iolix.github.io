@@ -36,6 +36,7 @@ $("#menu-about").click(function() {
 	$("article").addClass('hidden');
 	$("#linkedin").attr('src', 'pics/menu/linkedin.png');
 	$("#behance").attr('src', 'pics/menu/behance.png');
+	$("#CV").attr('src', 'pics/menu/CV.png');
 	$("#email-link img").attr('src', 'pics/menu/email.png');
 	$("#email-link span").css('color', 'white');
 });
@@ -49,6 +50,7 @@ $("#menu-dixi").click(function() {
 	$("article").addClass('hidden');
 	$("#linkedin").attr('src', 'pics/menu/linkedin.png');
 	$("#behance").attr('src', 'pics/menu/behance.png');
+	$("#CV").attr('src', 'pics/menu/CV.png');
 	$("#email-link img").attr('src', 'pics/menu/email.png');
 	$("#email-link span").css('color', 'white');
 });
@@ -62,6 +64,7 @@ $("#menu-portfolio").click(function() {
 	$("article").addClass('hidden');
 	$("#linkedin").attr('src', 'pics/menu/linkedin.png');
 	$("#behance").attr('src', 'pics/menu/behance.png');
+	$("#CV").attr('src', 'pics/menu/CV.png');
 	$("#email-link img").attr('src', 'pics/menu/email.png');
 	$("#email-link span").css('color', 'white');
 });
@@ -89,6 +92,7 @@ $(".portfolio-section").click(function() {
   $(".covers-container").addClass('invisible');
   $("#linkedin").attr('src', 'pics/menu/linkedin-black.png');
   $("#behance").attr('src', 'pics/menu/behance-black.png');
+  $("#CV").attr('src', 'pics/menu/CV-black.png');
   $("#email-link img").attr('src', 'pics/menu/email-black.png');
   $("#email-link span").css('color', 'black');
 });
