@@ -71,18 +71,23 @@ $("#menu-portfolio").click(function() {
 
 // PORTFOLIO SECTIONS ARROWS
 
-$('#next').click(function() {
+$('#next').click(function(event) {
   event.preventDefault();
+	if(!($('#covers').css('margin-left')==='-2000px')){
   $('#covers').animate({
     marginLeft: "-=400px"
   }, "fast");
+}
 });
 
-$('#previous').click(function() {
+$('#previous').click(function(event) {
   event.preventDefault();
+
+	if(!($('#covers').css('margin-left') === '0px')){
   $('#covers').animate({
     marginLeft: "+=400px"
   }, "fast");
+	};
 });
 
 // PORTFOLIO SECTIONS MENU
