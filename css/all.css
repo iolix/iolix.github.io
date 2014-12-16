@@ -661,63 +661,62 @@ header.small {
 }
 /* line 196, ../scss/_styles.scss */
 #covers a {
-  display: inline-block;
   height: inherit;
 }
 
-/* line 202, ../scss/_styles.scss */
+/* line 201, ../scss/_styles.scss */
 #previous, #next {
   position: fixed;
   top: 60%;
 }
 
-/* line 207, ../scss/_styles.scss */
+/* line 206, ../scss/_styles.scss */
 #previous {
   left: 2em;
 }
 
-/* line 211, ../scss/_styles.scss */
+/* line 210, ../scss/_styles.scss */
 #next {
   right: 2em;
 }
 
-/* line 216, ../scss/_styles.scss */
+/* line 215, ../scss/_styles.scss */
 #covers a.web:hover #portfolio-sections.web {
   color: black;
 }
 
 /* PROJECT PAGES */
-/* line 223, ../scss/_styles.scss */
+/* line 222, ../scss/_styles.scss */
 article {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 40%;
 }
-/* line 228, ../scss/_styles.scss */
+/* line 227, ../scss/_styles.scss */
 article .article-wrapper {
   position: relative;
   height: 100%;
   margin-top: 3%;
 }
-/* line 232, ../scss/_styles.scss */
+/* line 231, ../scss/_styles.scss */
 article .article-wrapper .text-wrapper {
   position: fixed;
   width: 18%;
 }
-/* line 236, ../scss/_styles.scss */
+/* line 235, ../scss/_styles.scss */
 article .article-wrapper h3, article .article-wrapper h6 {
   display: inline-block;
   font-weight: 600;
   line-height: 1.4em;
   margin: 1em 0;
 }
-/* line 242, ../scss/_styles.scss */
+/* line 241, ../scss/_styles.scss */
 article .article-wrapper p {
   display: inline-block;
   margin: 0;
 }
-/* line 246, ../scss/_styles.scss */
+/* line 245, ../scss/_styles.scss */
 article .article-wrapper #pic-gallery.vertical {
   position: absolute;
   top: 0;
@@ -725,112 +724,112 @@ article .article-wrapper #pic-gallery.vertical {
   width: 70%;
   height: auto;
 }
-/* line 252, ../scss/_styles.scss */
+/* line 251, ../scss/_styles.scss */
 article .article-wrapper #pic-gallery.vertical img {
   max-width: 100%;
   margin-bottom: 1em;
 }
-/* line 257, ../scss/_styles.scss */
+/* line 256, ../scss/_styles.scss */
 article .article-wrapper #pic-gallery.horizontal {
   margin-left: 30%;
   width: 100%;
   overflow: scroll;
   white-space: nowrap;
 }
-/* line 262, ../scss/_styles.scss */
+/* line 261, ../scss/_styles.scss */
 article .article-wrapper #pic-gallery.horizontal img {
   width: 1600px;
 }
 
 /* RESPONSIVE HEADER */
 @media only screen and (max-height: 832px) and (max-width: 840px) {
-  /* line 272, ../scss/_styles.scss */
+  /* line 271, ../scss/_styles.scss */
   header {
     height: 400px;
   }
 }
 @media only screen and (max-height: 832px) and (min-width: 840px) and (max-width: 1400px) {
-  /* line 278, ../scss/_styles.scss */
+  /* line 277, ../scss/_styles.scss */
   header {
     height: 345px;
   }
 }
 @media (max-height: 820px) {
-  /* line 285, ../scss/_styles.scss */
+  /* line 284, ../scss/_styles.scss */
   .small header {
     height: 140px;
   }
-  /* line 288, ../scss/_styles.scss */
+  /* line 287, ../scss/_styles.scss */
   .small #menu-container {
     margin-top: 35px;
     bottom: initial;
   }
 }
 @media (max-height: 590px) {
-  /* line 296, ../scss/_styles.scss */
+  /* line 295, ../scss/_styles.scss */
   header {
     min-height: 280px;
   }
 
-  /* line 299, ../scss/_styles.scss */
+  /* line 298, ../scss/_styles.scss */
   #menu-container {
     position: relative;
     margin-top: 140px;
   }
 }
 @media (max-width: 720px) {
-  /* line 306, ../scss/_styles.scss */
+  /* line 305, ../scss/_styles.scss */
   #menu-dixi {
     width: 248px;
   }
 
-  /* line 309, ../scss/_styles.scss */
+  /* line 308, ../scss/_styles.scss */
   #menu-portfolio {
     width: 172px;
     left: 36%;
   }
 
-  /* line 313, ../scss/_styles.scss */
+  /* line 312, ../scss/_styles.scss */
   #menu-about {
     width: 85px;
   }
 
-  /* line 316, ../scss/_styles.scss */
+  /* line 315, ../scss/_styles.scss */
   #portfolio-sections {
     font-size: .7em;
   }
 }
 /* RESPONSIVE ABOUT ME <p> AND SOCIAL MEDIA ICONS */
 @media (max-width: 1480px) {
-  /* line 327, ../scss/_styles.scss */
+  /* line 326, ../scss/_styles.scss */
   #contact-info #email-link span {
     font-size: 0.8em;
   }
 }
 @media (max-width: 1240px) {
-  /* line 335, ../scss/_styles.scss */
+  /* line 334, ../scss/_styles.scss */
   #aboutme-text p {
     width: 35%;
   }
 }
 @media (max-width: 1180px) {
-  /* line 343, ../scss/_styles.scss */
+  /* line 342, ../scss/_styles.scss */
   #contact-info #email-link img {
     visibility: visible;
   }
-  /* line 346, ../scss/_styles.scss */
+  /* line 345, ../scss/_styles.scss */
   #contact-info #email-link span {
     visibility: hidden;
   }
 }
 @media (max-width: 960px) {
-  /* line 354, ../scss/_styles.scss */
+  /* line 353, ../scss/_styles.scss */
   body {
     font-size: .8em;
   }
 }
 @media (max-width: 820px) {
-  /* line 360, ../scss/_styles.scss */
+  /* line 359, ../scss/_styles.scss */
   #aboutme-text p {
     width: 50%;
   }
@@ -844,13 +843,13 @@ article .article-wrapper #pic-gallery.horizontal img {
 } and remove max-width class
 */
 @media (max-width: 460px) {
-  /* line 375, ../scss/_styles.scss */
+  /* line 374, ../scss/_styles.scss */
   #aboutme-text p {
     width: 70%;
   }
 }
 @media only screen and (max-height: 790px) {
-  /* line 381, ../scss/_styles.scss */
+  /* line 380, ../scss/_styles.scss */
   #aboutme-text p {
     top: 180px;
     bottom: initial;
