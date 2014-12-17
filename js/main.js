@@ -71,11 +71,14 @@ $("#menu-portfolio").click(function() {
 
 // PORTFOLIO SECTIONS ARROWS
 
+var coversWidthTotal = $('.portfolio-section img').width()*7;
+var coversWidth = $('.portfolio-section img').width();
+
 $('#next').click(function(event) {
   event.preventDefault();
-	if(!($('#covers').css('margin-left')==='-2000px')){
+	if(!($('#covers').css('margin-left') === '-2000px')){
   $('#covers').animate({
-    marginLeft: "-=400px"
+    marginLeft: - coversWidth
   }, "fast");
 }
 });
@@ -85,7 +88,7 @@ $('#previous').click(function(event) {
 
 	if(!($('#covers').css('margin-left') === '0px')){
   $('#covers').animate({
-    marginLeft: "+=400px"
+    marginLeft: + coversWidth
   }, "fast");
 	};
 });
