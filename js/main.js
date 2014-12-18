@@ -71,24 +71,34 @@ $("#menu-portfolio").click(function() {
 
 // PORTFOLIO SECTIONS ARROWS
 
-var coversWidthTotal = $('.portfolio-section img').width()*7;
-var coversWidth = $('.portfolio-section img').width();
+var carouselImgNumber = 7;
+var carouselContentWidth = $('.portfolio-section img').width()*carouselImgNumber;
+var carouselContainerWidth = $('#covers').width();
+var arrowClicks = 0;
+var scrollArea = carouselContentWidth - carouselContainerWidth;
+var scrollSize = scrollArea / 4;
+
+// want to use marginLeft var istead of line 99
+// what is marginLeft (lines 90, 101)?
 
 $('#next').click(function(event) {
-  event.preventDefault();
-	if(!($('#covers').css('margin-left') === '-2000px')){
+	arrowClicks++;
+	var carouselImgWidth = $('.portfolio-section img').width();
+	event.preventDefault();
+	if(arrowClicks<=4){ 
   $('#covers').animate({
-    marginLeft: - coversWidth
+    marginLeft: '-=' + scrollSize + 'px'
   }, "fast");
 }
 });
 
 $('#previous').click(function(event) {
-  event.preventDefault();
-
+	arrowClicks--;
+	var carouselImgWidth = $('.portfolio-section img').width();
+	event.preventDefault();
 	if(!($('#covers').css('margin-left') === '0px')){
   $('#covers').animate({
-    marginLeft: + coversWidth
+    marginLeft: '+=' + scrollSize + 'px'
   }, "fast");
 	};
 });
