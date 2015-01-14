@@ -23,6 +23,16 @@ var web = {
 			]
 };
 
+var web02 = { // TO INSERT
+	title: 'trip tips',
+	text: 'TRIP TIPS is an application thought to help people prepare for travelling. Its main purpose is to prevent the renown problem of over-luggage. Choose your destination and you\'ll extract usefull information like the currency exchange and the timezone. Fill in your journey details and you\'ll have your suitcases ready to go!' ,
+	images: ['pics/works/Web-Nolita01.jpg',
+			'pics/works/Web-Nolita02.jpg',
+			'pics/works/Web-Rare01.jpg',
+			'pics/works/Web-Rare02.jpg'
+			]
+};
+
 var branding = {
 	title: 'qube srl logo restyling',
 	text: 'Qube is an Italian agency that deals with infrastructure design, disaster recovery systems and offers IT solutions through the development of new Java and Microsoft software. They hired me to refresh their outdated Corporate Identity. This included a new logo, business cards, letterhead, a brochure and a new lay-out for heir website.',
