@@ -82,14 +82,9 @@ var scrollSize = scrollArea / 4;
 // what is marginLeft (lines 90, 101)?
 
 $('#next').click(function(event) {
-	arrowClicks++;
-	var carouselImgWidth = $('.portfolio-section img').width();
+	var currentPosition = $( document ).scrollLeft();
+	$( document ).scrollLeft( currentPosition + scrollSize );
 	event.preventDefault();
-	if(arrowClicks<=4){ 
-  $('#covers').animate({
-    marginLeft: '-=' + scrollSize + 'px'
-  }, "fast");
-}
 });
 
 $('#previous').click(function(event) {
