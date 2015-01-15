@@ -74,28 +74,19 @@ $("#menu-portfolio").click(function() {
 var carouselImgNumber = 7;
 var carouselContentWidth = $('.portfolio-section img').width()*carouselImgNumber;
 var carouselContainerWidth = $('#covers').width();
-var arrowClicks = 0;
 var scrollArea = carouselContentWidth - carouselContainerWidth;
 var scrollSize = scrollArea / 4;
 
-// want to use marginLeft var istead of line 99
-// what is marginLeft (lines 90, 101)?
-
 $('#next').click(function(event) {
-	var currentPosition = $( document ).scrollLeft();
-	$( document ).scrollLeft( currentPosition + scrollSize );
+	// Increase the horizontal scroll position of the page
+	$( "html, body" ).animate({ scrollLeft: "+=" + scrollSize }, "fast");
 	event.preventDefault();
 });
 
 $('#previous').click(function(event) {
-	arrowClicks--;
-	var carouselImgWidth = $('.portfolio-section img').width();
+	// Decrease the horizontal scroll position of the page
+	$( "html, body" ).animate({ scrollLeft: "-=" + scrollSize }, "fast");
 	event.preventDefault();
-	if(!($('#covers').css('margin-left') === '0px')){
-  $('#covers').animate({
-    marginLeft: '+=' + scrollSize + 'px'
-  }, "fast");
-	};
 });
 
 // PORTFOLIO SECTIONS MENU
