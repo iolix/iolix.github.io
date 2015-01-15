@@ -27,6 +27,7 @@ $("#menu-about").mouseleave(function() {
 // MAIN MENU SELECTIONS
 
 $("#menu-about").click(function() {
+	resetPageScrollPosition();
 	$("#menu-about img").attr("src", "pics/menu/about-selected.png");
 	$("header").addClass('small');
 	$("#portfolio-sections").addClass('invisible');
@@ -42,6 +43,7 @@ $("#menu-about").click(function() {
 });
 
 $("#menu-dixi").click(function() {
+	resetPageScrollPosition();
 	$("header").removeClass('small');
 	$("#portfolio-sections").addClass('invisible');
 	$("#body-background").removeClass('blank');
@@ -56,6 +58,7 @@ $("#menu-dixi").click(function() {
 });
 
 $("#menu-portfolio").click(function() {
+	resetPageScrollPosition();
 	$("header").addClass('small');
 	$("#portfolio-sections").removeClass('invisible');
 	$("#body-background").addClass('blank');
@@ -89,6 +92,11 @@ $('#previous').click(function(event) {
 	event.preventDefault();
 });
 
+function resetPageScrollPosition() {
+	// Reset scroll position of the page
+	$("html, body").scrollLeft(0);
+}
+
 // PORTFOLIO SECTIONS MENU
 
 $(".portfolio-section").click(function() {
@@ -105,6 +113,12 @@ $(".portfolio-section").click(function() {
 
 function updateContent(page) {
 	var contentObject;
+
+	resetPageScrollPosition();
+
+	// Reset content scroll positions
+	$(".article-wrapper").scrollLeft(0);
+	$("#pic-gallery").scrollLeft(0);
 
 	if(page == 'retail') {
 		contentObject = retail;
