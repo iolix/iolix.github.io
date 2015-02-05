@@ -24,13 +24,9 @@ var web = {
 };
 
 var web02 = { // TO INSERT
-	title: 'trip tips',
-	text: 'TRIP TIPS is an application thought to help people prepare for travelling. Its main purpose is to prevent the renown problem of over-luggage. Choose your destination and you\'ll extract usefull information like the currency exchange and the timezone. Fill in your journey details and you\'ll have your suitcases ready to go!' ,
-	images: ['pics/works/Web-Nolita01.jpg',
-			'pics/works/Web-Nolita02.jpg',
-			'pics/works/Web-Rare01.jpg',
-			'pics/works/Web-Rare02.jpg'
-			]
+	title: 'triptips web app',
+	text: 'TRIPTIPS is an application thought to help people organize their travels. Its main purpose is to prevent the renown problem of over-luggaging. Choose your destination and you\'ll get usefull information like the currency exchange and the timezone. Fill in all the details of your journey and you\'ll have your suitcases ready to go!' ,
+	images: ['pics/works/Web-TRIPTIPS-01.jpg']
 };
 
 var branding = {
