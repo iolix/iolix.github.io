@@ -701,22 +701,23 @@ article .article-wrapper {
 }
 /* line 231, ../scss/_styles.scss */
 article .article-wrapper .text-wrapper {
+  top: 25%;
   position: fixed;
   width: 18%;
 }
-/* line 235, ../scss/_styles.scss */
+/* line 236, ../scss/_styles.scss */
 article .article-wrapper h3, article .article-wrapper h6 {
   display: inline-block;
   font-weight: 600;
   line-height: 1.4em;
   margin: 1em 0;
 }
-/* line 241, ../scss/_styles.scss */
+/* line 242, ../scss/_styles.scss */
 article .article-wrapper p {
   display: inline-block;
   margin: 0;
 }
-/* line 245, ../scss/_styles.scss */
+/* line 246, ../scss/_styles.scss */
 article .article-wrapper #pic-gallery.vertical {
   position: absolute;
   top: 0;
@@ -724,112 +725,112 @@ article .article-wrapper #pic-gallery.vertical {
   width: 70%;
   height: auto;
 }
-/* line 251, ../scss/_styles.scss */
+/* line 252, ../scss/_styles.scss */
 article .article-wrapper #pic-gallery.vertical img {
   max-width: 100%;
   margin-bottom: 1em;
 }
-/* line 256, ../scss/_styles.scss */
+/* line 257, ../scss/_styles.scss */
 article .article-wrapper #pic-gallery.horizontal {
   margin-left: 30%;
   width: 100%;
   overflow: scroll;
   white-space: nowrap;
 }
-/* line 261, ../scss/_styles.scss */
+/* line 262, ../scss/_styles.scss */
 article .article-wrapper #pic-gallery.horizontal img {
   width: 1600px;
 }
 
 /* RESPONSIVE HEADER */
 @media only screen and (max-height: 832px) and (max-width: 840px) {
-  /* line 271, ../scss/_styles.scss */
+  /* line 272, ../scss/_styles.scss */
   header {
     height: 400px;
   }
 }
 @media only screen and (max-height: 832px) and (min-width: 840px) and (max-width: 1400px) {
-  /* line 277, ../scss/_styles.scss */
+  /* line 278, ../scss/_styles.scss */
   header {
     height: 345px;
   }
 }
 @media (max-height: 820px) {
-  /* line 284, ../scss/_styles.scss */
+  /* line 285, ../scss/_styles.scss */
   .small header {
     height: 140px;
   }
-  /* line 287, ../scss/_styles.scss */
+  /* line 288, ../scss/_styles.scss */
   .small #menu-container {
     margin-top: 35px;
     bottom: initial;
   }
 }
 @media (max-height: 590px) {
-  /* line 295, ../scss/_styles.scss */
+  /* line 296, ../scss/_styles.scss */
   header {
     min-height: 280px;
   }
 
-  /* line 298, ../scss/_styles.scss */
+  /* line 299, ../scss/_styles.scss */
   #menu-container {
     position: relative;
     margin-top: 140px;
   }
 }
 @media (max-width: 720px) {
-  /* line 305, ../scss/_styles.scss */
+  /* line 306, ../scss/_styles.scss */
   #menu-dixi {
     width: 248px;
   }
 
-  /* line 308, ../scss/_styles.scss */
+  /* line 309, ../scss/_styles.scss */
   #menu-portfolio {
     width: 172px;
     left: 36%;
   }
 
-  /* line 312, ../scss/_styles.scss */
+  /* line 313, ../scss/_styles.scss */
   #menu-about {
     width: 85px;
   }
 
-  /* line 315, ../scss/_styles.scss */
+  /* line 316, ../scss/_styles.scss */
   #portfolio-sections {
     font-size: .7em;
   }
 }
 /* RESPONSIVE ABOUT ME <p> AND SOCIAL MEDIA ICONS */
 @media (max-width: 1480px) {
-  /* line 326, ../scss/_styles.scss */
+  /* line 327, ../scss/_styles.scss */
   #contact-info #email-link span {
     font-size: 0.8em;
   }
 }
 @media (max-width: 1240px) {
-  /* line 334, ../scss/_styles.scss */
+  /* line 335, ../scss/_styles.scss */
   #aboutme-text p {
     width: 35%;
   }
 }
 @media (max-width: 1180px) {
-  /* line 342, ../scss/_styles.scss */
+  /* line 343, ../scss/_styles.scss */
   #contact-info #email-link img {
     visibility: visible;
   }
-  /* line 345, ../scss/_styles.scss */
+  /* line 346, ../scss/_styles.scss */
   #contact-info #email-link span {
     visibility: hidden;
   }
 }
 @media (max-width: 960px) {
-  /* line 353, ../scss/_styles.scss */
+  /* line 354, ../scss/_styles.scss */
   body {
     font-size: .8em;
   }
 }
 @media (max-width: 820px) {
-  /* line 359, ../scss/_styles.scss */
+  /* line 360, ../scss/_styles.scss */
   #aboutme-text p {
     width: 50%;
   }
@@ -843,13 +844,13 @@ article .article-wrapper #pic-gallery.horizontal img {
 } and remove max-width class
 */
 @media (max-width: 460px) {
-  /* line 374, ../scss/_styles.scss */
+  /* line 375, ../scss/_styles.scss */
   #aboutme-text p {
     width: 70%;
   }
 }
 @media only screen and (max-height: 790px) {
-  /* line 380, ../scss/_styles.scss */
+  /* line 381, ../scss/_styles.scss */
   #aboutme-text p {
     top: 180px;
     bottom: initial;

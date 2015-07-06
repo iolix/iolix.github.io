@@ -63,7 +63,7 @@ $("#menu-portfolio").click(function() {
 	$("#portfolio-sections").removeClass('invisible');
 	$("#body-background").addClass('blank');
 	$("#aboutme-text").addClass('invisible');
-	$(".covers-container").removeClass('invisible');
+	$(".covers-container").removeClass('hidden');
 	$("article").addClass('hidden');
 	$("#linkedin").attr('src', 'pics/menu/linkedin.png');
 	$("#behance").attr('src', 'pics/menu/behance.png');
@@ -101,7 +101,7 @@ function resetPageScrollPosition() {
 
 $(".portfolio-section").click(function() {
   $("article").removeClass('hidden');
-  $(".covers-container").addClass('invisible');
+  $(".covers-container").addClass('hidden');
   $("#linkedin").attr('src', 'pics/menu/linkedin-black.png');
   $("#behance").attr('src', 'pics/menu/behance-black.png');
   $("#CV").attr('src', 'pics/menu/CV-black.png');
