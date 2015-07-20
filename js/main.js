@@ -49,6 +49,7 @@ $("#menu-dixi").click(function() {
 	$("#body-background").removeClass('blank');
 	$("#aboutme-text").removeClass('invisible');
 	$(".covers-container").addClass('invisible');
+	$(".covers-container").addClass('hidden');
 	$("article").addClass('hidden');
 	$("#linkedin").attr('src', 'pics/menu/linkedin.png');
 	$("#behance").attr('src', 'pics/menu/behance.png');
