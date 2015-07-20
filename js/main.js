@@ -63,6 +63,7 @@ $("#menu-portfolio").click(function() {
 	$("#portfolio-sections").removeClass('invisible');
 	$("#body-background").addClass('blank');
 	$("#aboutme-text").addClass('invisible');
+	$(".covers-container").removeClass('invisible');
 	$(".covers-container").removeClass('hidden');
 	$("article").addClass('hidden');
 	$("#linkedin").attr('src', 'pics/menu/linkedin.png');
