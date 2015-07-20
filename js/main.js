@@ -76,20 +76,25 @@ $("#menu-portfolio").click(function() {
 
 // PORTFOLIO SECTIONS ARROWS
 
-var carouselImgNumber = 7;
-var carouselContentWidth = $('.portfolio-section img').width()*carouselImgNumber;
-var carouselContainerWidth = $('#covers').width();
-var scrollArea = carouselContentWidth - carouselContainerWidth;
-var scrollSize = scrollArea / 4;
+function calculateScrollSize() {
+	var carouselImgNumber = 7;
+	var carouselContentWidth = $('.portfolio-section img').width()*carouselImgNumber;
+	var carouselContainerWidth = $('#covers').width();
+	var scrollArea = carouselContentWidth - carouselContainerWidth;
+	var scrollSize = scrollArea / 4;
+	return scrollSize;
+}
 
 $('#next').click(function(event) {
 	// Increase the horizontal scroll position of the page
+	var scrollSize = calculateScrollSize();
 	$( "html, body" ).animate({ scrollLeft: "+=" + scrollSize }, "fast");
 	event.preventDefault();
 });
 
 $('#previous').click(function(event) {
 	// Decrease the horizontal scroll position of the page
+	var scrollSize = calculateScrollSize();
 	$( "html, body" ).animate({ scrollLeft: "-=" + scrollSize }, "fast");
 	event.preventDefault();
 });
